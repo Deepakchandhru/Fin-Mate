@@ -1,0 +1,243 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.terms-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.terms-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4a90e2;
+}
+
+/* Category Selector */
+.terms-category {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.terms-select {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.terms-select:focus {
+    border-color: #4a90e2;
+}
+
+/* Terms List */
+.terms-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.term-card {
+    background: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.term-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.term-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.bookmark-button {
+    background: #4a90e2;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.bookmark-button.bookmarked {
+    background: #f39c12;
+}
+
+.bookmark-button:hover {
+    background: #357ab8;
+}
+
+/* Term Details */
+.term-details {
+    padding: 20px;
+    background: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.term-definition,
+.term-scenario {
+    margin-bottom: 15px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.quiz-button,
+.youtube-button {
+    background: #4a90e2;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+}
+
+.quiz-button:hover,
+.youtube-button:hover {
+    background: #357ab8;
+}
+
+/* Video View */
+.video-view {
+    text-align: center;
+}
+
+.video-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #4a90e2;
+}
+
+.video-card {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.video-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.video-thumbnail {
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.video-select-button {
+    background: #4a90e2;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.video-select-button:hover {
+    background: #357ab8;
+}
+
+/* Buttons */
+.back-button {
+    background: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background: #c0392b;
+}
+
+/* Quiz Styles */
+.quiz-container {
+    padding: 20px;
+    background: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-question h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.check-button,
+.next-button {
+    background: #4a90e2;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+}
+
+.check-button:hover,
+.next-button:hover {
+    background: #357ab8;
+}
+
+.status {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.status.correct {
+    color: #27ae60;
+}
+
+.status.wrong {
+    color: #e74c3c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .terms-list {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .terms-title {
+        font-size: 2rem;
+    }
+
+    .video-card {
+        width: 100%;
+    }
+}
